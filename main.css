@@ -1,0 +1,17 @@
+.right-img {
+    max-width: none;
+}
+
+.font {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.checkbox input:checked {
+    background-color: #473E9E
+}
+
+.password {
+
+    outline: none !important;
+}

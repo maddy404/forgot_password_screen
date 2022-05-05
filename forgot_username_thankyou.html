@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#473E9E",
+              secondary: "#3291E9",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex w-full">
+      <div class="flex flex-col w-full px-36 py-36">
+        <div class="flex w-full">
+          <h1 class="font-extrabold w-full text-4xl text-primary text-center">
+            Thanks for reaching out!
+          </h1>
+        </div>
+        <div class="font-medium text-primary py-4 text-center">
+          Our support team will contact you asap to assist you
+        </div>
+        <div class="flex w-full pt-12">
+          <button class="rounded-md bg-primary w-full text-white font-bold p-4">
+            BACK TO LOGIN
+          </button>
+        </div>
+      </div>
+      <div class="flex w-full h-screen border">
+        <img
+          src="images/rightside.svg"
+          class="object-fill -mt-8 h-screen right-img"
+          alt="right"
+        />
+        <img
+          src="images/brand_logo2.svg"
+          class="absolute px-20 py-8 mx-4"
+          alt="brand-logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#473E9E",
+              secondary: "#3291E9",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex w-full font">
+      <div class="flex flex-col w-full px-36 py-36">
+        <div class="flex w-full">
+          <h1 class="font-extrabold w-full text-4xl text-primary">Sign In</h1>
+        </div>
+        <div class="flex flex-col w-full pt-8">
+          <h6 class="text-primary font-medium text-1xl pb-3">
+            Username or Email address
+          </h6>
+          <input
+            type="text"
+            class="border p-3 px-3 w-full outline-0"
+            placeholder="Enter Username or Email address"
+          />
+        </div>
+
+        <div class="flex flex-col w-full pt-4">
+          <h6 class="text-primary font-medium text-1xl pb-3">Password</h6>
+          <div class="flex justify-between border p-3 px-3 w-full">
+            <input
+              type="password"
+              class="outline-0"
+              placeholder="Enter Your Password"
+            />
+
+            <a href="#"><img src="images/eye-slash.svg" alt="eye-slash" /></a>
+          </div>
+        </div>
+        <div class="flex w-full pt-4">
+          <div class="flex w-full justify-between align-justify">
+            <div class="flex space-x-3 py-3">
+              <input type="checkbox" class="border-gray-300 rounded h-5 w-5" />
+
+              <div class="flex flex-col">
+                <h1 class="leading-none text-primary font-medium">
+                  Remember Me
+                </h1>
+              </div>
+            </div>
+
+            <div class="py-3 text-secondary font-normal">Forgot Password?</div>
+          </div>
+        </div>
+        <div class="flex justify-center w-full pt-4">
+          <button class="rounded-md bg-primary w-full text-white font-bold p-4">
+            SIGN IN
+          </button>
+        </div>
+
+        <div class="flex justify-center w-full text-red-500 font-bold pt-4">
+          Invalid Credentials!
+        </div>
+      </div>
+      <div class="flex w-full h-screen border">
+        <img
+          src="images/rightside.svg"
+          class="object-fill -mt-8 h-screen right-img"
+          alt="right"
+        />
+        <img
+          src="images/brand_logo2.svg"
+          class="absolute px-20 py-8 mx-4"
+          alt="brand-logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>
